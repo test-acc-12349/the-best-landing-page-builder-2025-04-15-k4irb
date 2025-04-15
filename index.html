@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Best Landing Page Builder</title>
+    <meta name="description" content="Create stunning landing pages in minutes with our powerful landing page builder">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+</head>
+<body class="font-sans antialiased text-gray-900 bg-white">
+    <header class="fixed w-full bg-white/95 backdrop-blur-sm shadow-sm z-50" x-data="{ isOpen: false }">
+        <nav class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center">
+                    <a href="/" class="text-2xl font-bold text-blue-600">PageBuilder</a>
+                </div>
+                
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#features" class="text-gray-700 hover:text-blue-600 transition-colors duration-300">Features</a>
+                    <a href="#benefits" class="text-gray-700 hover:text-blue-600 transition-colors duration-300">Benefits</a>
+                    <a href="https://sigmaseo.io" class="bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700 transition-all duration-300 transform hover:scale-105">Get Started</a>
+                </div>
+
+                <button @click="isOpen = !isOpen" class="md:hidden focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path x-show="!isOpen" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        <path x-show="isOpen" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                    </svg>
+                </button>
+            </div>
+
+            <div x-show="isOpen" class="md:hidden mt-4">
+                <a href="#features" class="block py-2 text-gray-700 hover:text-blue-600">Features</a>
+                <a href="#benefits" class="block py-2 text-gray-700 hover:text-blue-600">Benefits</a>
+                <a href="https://sigmaseo.io" class="block py-2 text-blue-600 font-semibold">Get Started</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="pt-32 pb-24 bg-gradient-to-br from-blue-50 to-white">
+            <div class="container mx-auto px-6">
+                <div class="max-w-4xl mx-auto text-center">
+                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight mb-6">
+                        The Best Landing Page Builder
+                    </h1>
+                    <p class="text-xl md:text-2xl text-gray-600 mb-10">
+                        Create stunning landing pages in minutes
+                    </p>
+                    <a href="https://sigmaseo.io" class="inline-block bg-blue-600 text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-blue-700 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl">
+                        Start Building Now
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="features" class="py-24 bg-white">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">Powerful Features</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+                    <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+                        <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-6">
+                            <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-4">Clean Modern Design</h3>
+                        <p class="text-gray-600">Create beautiful, professional landing pages that capture attention and drive conversions.</p>
+                    </div>
+
+                    <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+                        <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-6">
+                            <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-4">Mobile Responsive</h3>
+                        <p class="text-gray-600">Your pages look perfect on every device, from smartphones to desktop computers.</p>
+                    </div>
+
+                    <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+                        <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-6">
+                            <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-4">Fast Loading</h3>
+                        <p class="text-gray-600">Optimized performance ensures your pages load quickly and keep visitors engaged.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="benefits" class="py-24 bg-gray-50">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">Key Benefits</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                            <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-4">Increased Conversion</h3>
+                        <p class="text-gray-600">Optimize your pages for better conversion rates and higher ROI.</p>
+                    </div>
+
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                            <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 10h4.764a2 2 0 011.789 2.894l-3.5 7A2 2 0 0115.263 21h-4.017c-.163 0-.326-.02-.485-.06L7 20m7-10V5a2 2 0 00-2-2h-.095c-.5 0-.905.405-.905.905 0 .714-.211 1.412-.608 2.006L7 11v9m7-10h-2M7 20H5a2 2 0 01-2-2v-6a2 2 0 012-2h2.5"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-4">Better Experience</h3>
+                        <p class="text-gray-600">Deliver an exceptional user experience that keeps visitors engaged.</p>
+                    </div>
+
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                            <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-4">Higher Rankings</h3>
+                        <p class="text-gray-600">SEO-optimized pages that help you rank better in search results.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-24 bg-blue-600 text-white">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-3xl md:text-4xl font-bold mb-8">Ready to Build Your Perfect Landing Page?</h2>
+                <p class="text-xl mb-10 text-blue-100">Start creating stunning pages that convert today.</p>
+                <a href="https://sigmaseo.io" class="inline-block bg-white text-blue-600 px-8 py-4 rounded-full text-lg font-semibold hover:bg-blue-50 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl">
+                    Get Started Now
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-900 text-gray-400 py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12">
+                <div>
+                    <h3 class="text-white text-lg font-semibold mb-4">PageBuilder</h3>
+                    <p class="mb-4">Create stunning landing pages in minutes.</p>
+                    <p>Contact: contact@example.com</p>
+                </div>
+                <div>
+                    <h4 class="text-white text-lg font-semibold mb-4">Features</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:text-white transition-colors duration-300">Clean Design</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors duration-300">Mobile Responsive</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors duration-300">Fast Loading</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white text-lg font-semibold mb-4">Company</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:text-white transition-colors duration-300">About Us</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors duration-300">Blog</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors duration-300">Careers</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white text-lg font-semibold mb-4">Legal</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:text-white transition-colors duration-300">Privacy Policy</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors duration-300">Terms of Service</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors duration-300">Cookie Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-12 pt-8 text-center">
+                <p>&copy; 2024 PageBuilder. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
